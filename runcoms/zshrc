@@ -11,3 +11,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+
+# Ajout de ~/bin au PATH
+export PATH=$HOME/bin:$PATH
+
+# TextMate comme editeur
+export SVN_EDITOR='mate -w'
+export EDITOR='mate -w'
+
+# thefuck command correction
+eval "$(thefuck --alias)"
