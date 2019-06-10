@@ -5,6 +5,11 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Disable the whole bunch of useless git aliases
+zstyle ':prezto:module:git:alias' skip 'yes'
+alias kraken='open -na "GitKraken" --args -p $(pwd)'
+
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -16,9 +21,13 @@ fi
 # Ajout de ~/bin au PATH
 export PATH=$HOME/bin:$PATH
 
-# TextMate comme editeur
-export SVN_EDITOR='mate -w'
+
+# Use TextMate for all your editing needs
 export EDITOR='mate -w'
 
+
 # thefuck command correction
-eval "$(thefuck --alias)"
+eval $(thefuck --alias)
+
+# Always use yarn inside a docker container (not ready yet)
+# alias yarn='docker run --rm -v $(pwd):/app -w /app lahautesociete/nodejs-ci:8 yarn'
