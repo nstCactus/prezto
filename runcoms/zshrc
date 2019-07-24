@@ -31,3 +31,13 @@ eval $(thefuck --alias)
 
 # Always use yarn inside a docker container (not ready yet)
 # alias yarn='docker run --rm -v $(pwd):/app -w /app lahautesociete/nodejs-ci:8 yarn'
+
+# Load aliases file
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/alias" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/alias"
+fi
+
+# Load environment variables file
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/env" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/env"
+fi
