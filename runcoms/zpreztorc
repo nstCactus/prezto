@@ -41,6 +41,7 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'osx' \
   'screen' \
+  'ssh' \
   'completion' \
   'node' \
   'syntax-highlighting' \
