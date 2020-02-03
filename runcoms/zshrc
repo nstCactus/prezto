@@ -7,7 +7,6 @@
 
 # Disable the whole bunch of useless git aliases
 zstyle ':prezto:module:git:alias' skip 'yes'
-alias kraken='open -na "GitKraken" --args -p $(pwd)'
 
 
 # Source Prezto.

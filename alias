@@ -1,1 +1,2 @@
+alias kraken='open -a "GitKraken" --args -p $(pwd)'
 alias timestamp="date +%s"
