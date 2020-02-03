@@ -22,10 +22,6 @@ fi
 export PATH=$HOME/bin:$PATH
 
 
-# Use TextMate for all your editing needs
-export EDITOR='mate -w'
-
-
 # thefuck command correction
 eval $(thefuck --alias)
 
