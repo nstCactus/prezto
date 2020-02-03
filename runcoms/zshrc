@@ -17,11 +17,6 @@ fi
 
 # Customize to your needs...
 
-
-# Ajout de ~/bin au PATH
-export PATH=$HOME/bin:$PATH
-
-
 # thefuck command correction
 eval $(thefuck --alias)
 
