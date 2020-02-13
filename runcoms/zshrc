@@ -16,9 +16,6 @@ fi
 
 # Customize to your needs...
 
-# thefuck command correction
-eval $(thefuck --alias)
-
 # Always use yarn inside a docker container (not ready yet)
 # alias yarn='docker run --rm -v $(pwd):/app -w /app lahautesociete/nodejs-ci:8 yarn'
 
@@ -31,3 +28,11 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/env" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/env"
 fi
+
+# Load brew-related environment variables
+if [[ -f $HOME/.brew-env ]]; then
+    source $HOME/.brew-env
+fi
+
+# thefuck command correction
+eval $(thefuck --alias)
