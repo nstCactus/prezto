@@ -1,1 +1,2 @@
 export LHS="$HOME/Projets/LHS"
+export GITLAB_API_ENDPOINT="https://gitlab.lahautesociete.com/api/v4"

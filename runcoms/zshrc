@@ -29,6 +29,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/env" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/env"
 fi
 
+# Load secret (uncommited) environment variables file
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/env.secret" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/env.secret"
+fi
+
 # Load brew-related environment variables
 if [[ -f $HOME/.brew-env ]]; then
     source $HOME/.brew-env
