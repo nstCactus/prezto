@@ -116,7 +116,7 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 #
 
 # Set the keyword used by `mand` to open man pages in Dash.app
-zstyle ':prezto:module:osx:man' dash-keyword 'mand'
+zstyle ':prezto:module:osx:man' dash-keyword 'man'
 
 #
 # Pacman
