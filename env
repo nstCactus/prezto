@@ -1,2 +1,7 @@
 export LHS="$HOME/Projets/LHS"
 export GITLAB_API_ENDPOINT="https://gitlab.lahautesociete.com/api/v4"
+
+# Syntax highlighting in less
+LESSPIPE=`which src-hilite-lesspipe.sh`
+export LESSOPEN="| ${LESSPIPE} %s"
+export LESS=' -R -X -F '
